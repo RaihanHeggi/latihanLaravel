@@ -25,3 +25,7 @@ Route::get('/about', function () {
 Route::get('/', 'PagesController@home');
 Route::get('/about', 'PagesController@about');
 Route::get('/mahasiswa','MahasiswaController@index');
+
+//Students
+Route::get('/students','StudentController@index');
+Route::get('/students/{student}','StudentController@show');

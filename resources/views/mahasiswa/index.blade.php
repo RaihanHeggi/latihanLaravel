@@ -37,7 +37,7 @@
                     @endforeach
                 </tbody>
             </table>
-        </dix>
+        </div>
     </div>   
 </div>
 @endsection
