@@ -28,4 +28,6 @@ Route::get('/mahasiswa','MahasiswaController@index');
 
 //Students
 Route::get('/students','StudentController@index');
+Route::get('/students/create','StudentController@create');
 Route::get('/students/{student}','StudentController@show');
+Route::post('/students','StudentController@store');
