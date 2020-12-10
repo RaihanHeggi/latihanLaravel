@@ -27,7 +27,12 @@ Route::get('/about', 'PagesController@about');
 Route::get('/mahasiswa','MahasiswaController@index');
 
 //Students
-Route::get('/students','StudentController@index');
+Route::get('/students','StudentController@index');  
 Route::get('/students/create','StudentController@create');
 Route::get('/students/{student}','StudentController@show');
 Route::post('/students','StudentController@store');
+Route::delete('students/{student}','StudentController@destroy');
+Route::get('/students/{student}/edit','StudentController@edit');
+Route::post('/students/edit/{student}','StudentController@update');
+
+//route::resource('/student','StudentController')
